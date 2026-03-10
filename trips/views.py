@@ -8,8 +8,8 @@ from decimal import Decimal
 from bookings.models import Booking
 
 
-def home_view(request):
-    return render(request, 'trips/home.html')
+def index_view(request):
+    return render(request, 'trips/index.html')
 
 
 def trip_search_view(request):
