@@ -1,14 +1,16 @@
 """
 URL configuration for hbooking project.
 """
+from django import views
 from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-
+from trips import views as trip_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', trip_views.index_view, name='index'),
     path('', include('trips.urls')),
     path('accounts/', include('accounts.urls')),
     path('locations/', include('locations.urls')),
