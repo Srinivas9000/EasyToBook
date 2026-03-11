@@ -13,9 +13,9 @@
 </head>
 <body>
     <nav class="navbar">
-        <a href="{% url 'trips:home' %}" class="nav-brand">Easytobook</a>
+        <a href="{% url 'trips:index' %}" class="nav-brand">Easytobook</a>
         <ul class="nav-links">
-            <li><a href="{% url 'trips:home' %}">Home</a></li>
+            <li><a href="{% url 'trips:index' %}">Home</a></li>
             <a href="{% url 'trips:contact' %}">Contact</a>
             {% if user.is_authenticated %}
                 <li><a href="{% url 'accounts:dashboard' %}">Histroy</a></li>
